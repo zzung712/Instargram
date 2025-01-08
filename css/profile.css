@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.main_wrap{width:calc(100% - 335px); height:100%;}
+#contents{width:100%; height:calc(100% - 80px);}
+.profile_wrap{width:940px; height:100%; margin:0 auto;}
+.top{width:100%; height:430px; border-bottom:1px solid #eeeeee; box-sizing:border-box;}
+.profile_info{width:100%; height:255px; display:flex;}
+.profile_img{width:290px; height:100%;}
+.profile_img>form{width:100%; height:100%; display:flex; align-items:center;}
+.profile_img>form>label{width:160px; height:160px;overflow:hidden; display:block; border-radius:100%; border:1px solid #eeeeee;}
+.profile_img>form>label>img{width:100%; height:100%;}
+.profile_img>form>#pro_img{display:none;}
+
+.profile_txt{width:650px; height:100%; display:flex; flex-wrap:wrap; align-content:center;}
+.profile_txt>ul{width:100%; display:flex; height:50px; font-size:1.1em; align-items:center;}
+.profile_txt>.id{font-weight:bold;}
+.profile_txt>ul>li{cursor:pointer;}
+.profile_txt>.id>li>span{font-size:0.9em; display:flex; height:35px; background:#eeeeee; align-items:center; padding:0 10px; border-radius:5px; cursor:pointer;}
+.profile_txt>.follow>li>span{font-weight:bold; margin-left:5px;}
+.profile_txt>ul>li{display:flex; margin-right:10px;}
+
+.profile_story{width:100%; height:175px;}
+.story{width:100px; height:100%; text-align:center; cursor: pointer;}
+.story>.circle{width:100px; height:100px; border:1px solid #eeeeee; border-radius:100%; display:flex; align-items:center; justify-content:center;}
+.story>.circle>span{display:flex; width:90px; height:90px; background:#eeeeee; border-radius:100%; justify-content:center; align-items:center; font-size:4em; color:#aaaaaa;}
+.story>.txt{line-height:45px;}
+
+.bottom{width:100%; height:calc(100% - 430px);}
+.bottom>.tit{width:100%; height:60px;}
+.bottom>.tit>ul{width:300px; display:flex; height:100%; align-items:center; margin:0 auto;}
+.bottom>.tit>ul>li{width:100px; height:100%; text-align:center; line-height:60px; cursor:pointer;}
+.bottom>.tit>ul>li:first-child{border-top:1px solid #000000; font-weight:bold;}
+
+.photo{width:100%; height:calc(100% - 80px); overflow:scroll; overflow-x:hidden;}
+.photo::-webkit-scrollbar{display:none;}
+.photo>div{width:100%; height:auto; display:flex; flex-wrap:wrap;}
+.photo>div>.post_box{width:310px; height:310px; overflow:hidden; margin-right:3px; margin-bottom:5px; position:relative;}
+.photo>div>.post_box:hover>.comment_box{opacity:1;}
+.comment_box{width:100%; height:100%; background:#0000008e; position:absolute; top:0; color:#ffffff; display:flex; justify-content:center; align-items:center; cursor:pointer; opacity:0;}
+.comment_box>ul{display:flex;}
+.comment_box>ul>li{display:flex; width:40px; height:30px; align-items:center; justify-content:space-around;}
+
+.photo>div>.post_box>img{width:100%; height:100%;}
+
+.reels_wrap>.reels_box{width:230px; height:330px; position:relative; margin-right:5px; margin-bottom:5px;}
+.reels_wrap>.reels_box>img{width:100%; height:100%;}
+.photo>div>.reels_box:hover>.comment_box2{opacity:1;}
+.comment_box2{width:100%; height:100%; background:#0000008e; position:absolute; top:0; color:#ffffff; display:flex; justify-content:center; align-items:center; cursor:pointer; opacity:0;}
+.comment_box2>ul{display:flex;}
+.comment_box2>ul>li{display:flex; width:40px; height:30px; align-items:center; justify-content:space-around;}
+
+.tag_box{width:310px; height:310px; overflow:hidden; margin-right:3px; margin-bottom:5px; position:relative;}
+.tag_box>img{width:100%; height:100%;}
+.tag_box:hover>.comment_box3{opacity:1;}
+.comment_box3{width:100%; height:100%; background:#0000008e; position:absolute; top:0; color:#ffffff; display:flex; justify-content:center; align-items:center; cursor:pointer; opacity:0;}
+.comment_box3>ul{display:flex;}
+.comment_box3>ul>li{display:flex; width:40px; height:30px; align-items:center; justify-content:space-around;}
+
+/* .reels_wrap,.tag_wrap{display:none;}*/
+
+#footer{width:940px; height:80px; color:#777777; font-size:0.85em; margin:0 auto;}
+.fmenu{width:100%; height:50%; display:flex; justify-content:space-between; align-items:center; }
+.copy{width:100%; height:50%; display:flex; align-items:center; justify-content:center;}

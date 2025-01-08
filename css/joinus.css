@@ -1,0 +1,39 @@
+@charset "utf-8";
+.wrap{width:900px; height:100vh; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:center; align-content:space-around;}
+
+#main{width:100%; height:760px;}
+.joinus_wrap{width:400px; height:100%; margin:0 auto; display:flex; flex-wrap:wrap; align-content:space-between;}
+
+.joinus_box{width:100%; height:575px; border:1px solid #eeeeee; box-sizing:border-box; padding:50px 40px; display:flex; flex-wrap:wrap; align-content:space-around;}
+.logo{width:100%; text-align:center;}
+
+.txt{width:100%; text-align:center; font-size:1.2em; color:#777777;}
+
+.f_login{width:100%; height:35px;}
+.f_login>a{display:flex; width:100%; height:100%; justify-content:center; align-items:center; color:#ffffff; font-weight:bold; background:#4cb5f9; border-radius:5px;}
+.f_login>a>p{width:18px; height:18px; background:#ffffff; color:#4cb5f9; font-size:1.5em; text-align:right; padding-right:3px; box-sizing:border-box; margin-right:10px;}
+.f_login>a:hover{background:#2d8fdf;}
+.f_login>a:hover>p{color:#2d8fdf;}
+
+.or{width:100%; height:60px; display:flex; align-items:center;}
+.or>p{width:100%; height:2px; background:#dddddd;}
+.or>span{display:block; width:140px; text-align:center; color:#777777; font-weight:bold;}
+
+.joinus{width:100%;}
+.joinus>form{width:100%;}
+.joinus>form>p{width:100%; height:35px; margin-bottom:5px;}
+.joinus>form>p>input{width:100%; height:100%; border:1px solid #d8d8d8; border-radius:5px; padding:0 10px; background:#f8f8f8;}
+.joinus>form>span{font-size:0.8em; color:#777777; display:block; margin:10px 0;}
+.joinus>form>span>a{color:#385185; font-weight:bold;}
+.joinus>form>button{width:100%; height:35px; background:#4cb5f9; color:#ffffff; border:0; border-radius:5px; font-weight:bold; cursor:pointer;}
+
+.login_box{width:100%; height:70px; border:1px solid #eeeeee; box-sizing:border-box; display:flex; align-items:center; justify-content:center;}
+.login_box>p>a{color:#4cb5f9; font-weight:bold; margin-left:5px;}
+
+.download_box{width:100%; height:90px; display:flex; flex-wrap:wrap; align-content:center; justify-content:center;}
+.download_box>p{width:100%; text-align:center; line-height:35px;}
+.download_box>a>img{height:45px; margin:0 5px;}
+
+#footer{width:100%; height:80px; color:#777777; font-size:0.85em;}
+.fmenu{width:100%; height:50%; display:flex; justify-content:space-between; align-items:center; }
+.copy{width:100%; height:50%; display:flex; align-items:center; justify-content:center;}

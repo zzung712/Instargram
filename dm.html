@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Instargram·메세지</title>
+ <link rel="icon" href="./img/instlogo.png">
+ <link rel="stylesheet" href="./css/reset.css">
+ <link rel="stylesheet" href="./css/common.css">
+ <link rel="stylesheet" href="./css/dm.css">
+ <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+ <script src="./js/common.js" defer></script>
+ <script src="./js/dm.js" defer></script>
+</head>
+<body>
+ <div class="wrap">
+  <header id="header">
+   <div class="htop">
+    <div class="logo">
+     <a href="index.html">
+      <img src="./img/txt_logo.png" alt="x">
+     </a>
+    </div>
+    <!-- logo end -->
+    <div class="menu">
+     <ul>
+      <li><a href="index.html"><img src="./img/home.png" alt="x"><p>홈</p></a></li>
+      <li id="searchClick"><a href="#"><img src="./img/search.png" alt="x"><p>검색</p></a></li>
+      <li><a href="explore.html"><img src="./img/explore.png" alt="x"><p>탐색 탭</p></a></li>
+      <li><a href="reels.html"><img src="./img/reels.png" alt="x"><p>릴스</p></a></li>
+      <li><a href="dm.html"><img src="./img/dm.png" alt="x"><p>메세지</p></a></li>
+      <li id="alramClick"><a href="#"><img src="./img/like.png" alt="x"><p>알림</p></a></li>
+      <li id="createClick"><a href="#"><img src="./img/create.png" alt="x"><p>만들기</p></a></li>
+      <li><a href="profile.html"><img src="./img/profile.png" alt="x"><p>프로필</p></a></li>
+     </ul>
+    </div>
+   </div>
+   <!-- htop end -->
+   <div class="hbottom">
+    <div class="menu">
+     <ul>
+      <li><a href="#"><img src="./img/threades.png" alt="x"><p>Threads</p></a></li>
+      <li><a href="#"><img src="./img/hamMenu.png" alt="x"><p>더보기</p></a></li>
+     </ul>
+    </div>
+   </div>
+   <!-- hbottom end -->
+  </header>
+  <!-- header end -->
+
+			<div class="h_sub">
+				<div class="htop">
+					<div class="logo">
+						<a href="index.html">
+							<img src="./img/instar_logo.png" alt="x">
+						</a>
+					</div>
+					<!-- logo end -->
+					<div class="menu">
+						<ul>
+							<li><a href="index.html"><img src="./img/home.png" alt="x"></a></li>
+							<li id="sub_searchClick"><a href="#"><img src="./img/search.png" alt="x"></a></li>
+							<li><a href="explore.html"><img src="./img/explore.png" alt="x"></a></li>
+							<li><a href="reels.html"><img src="./img/reels.png" alt="x"></a></li>
+							<li><a href="dm.html"><img src="./img/dm.png" alt="x"></a></li>
+							<li id="sub_alramClick"><a href="#"><img src="./img/like.png" alt="x"></a></li>
+							<li onclick="create()"><a href="#"><img src="./img/create.png" alt="x"></a></li>
+							<li><a href="profile.html"><img src="./img/profile.png" alt="x"></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- htop end -->
+				<div class="hbottom">
+					<div class="menu">
+						<ul>
+							<li><a href="#"><img src="./img/threades.png" alt="x"></a></li>
+							<li><a href="#"><img src="./img/hamMenu.png" alt="x"></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- hbottom end -->
+			</div>
+<!-- h_sub end -->
+
+<!-- search 영역 start -->
+	<div class="search_wrap">
+		<div class="search_box">
+			<div class="search">
+				<p>검색</p>
+				<form action="" method="get">
+					<input type="text" placeholder="검색">
+				</form>
+			</div>
+			<!-- search end -->
+			<div class="search_list">
+				<div class="tit">
+					<p>최근 검색 항목</p>
+				</div>
+				<div class="list">
+					<p>최근 검색 내역 없음.</p>
+				</div>
+			</div>
+		</div>
+		<!-- search_box end -->
+	</div>
+<!-- search 영역 end -->
+
+<!-- arlam 영역 start -->
+	<div class="arlam_wrap">
+		<div class="arlam_box">
+			<div class="tit">
+				<p>알림</p>
+			</div>
+			<div class="list">
+				<p>이전활동</p>
+				<ul>
+					<li><img src="./img/story_img1.JPG" alt="x"></li>
+					<li><p>instargram 알림내용 입니다.instargram 알림내용 입니다.</p></li>
+				</ul>
+				<ul>
+					<li><img src="./img/story_img2.JPG" alt="x"></li>
+					<li><p>instargram 알림내용 입니다.instargram 알림내용 입니다.</p></li>
+				</ul>
+				<ul>
+					<li><img src="./img/story_img3.JPG" alt="x"></li>
+					<li><p>instargram 알림내용 입니다.instargram 알림내용 입니다.</p></li>
+				</ul>
+				<ul>
+					<li><img src="./img/story_img4.JPG" alt="x"></li>
+					<li><p>instargram 알림내용 입니다.instargram 알림내용 입니다.</p></li>
+				</ul>
+			</div>
+		</div>
+		<!-- arlam_box end -->
+	</div>
+<!-- arlam 영역 end -->
+
+		<!-- create 영역 start -->
+			<div class="create_wrap">
+				<div class="create_bgclose"></div>
+				<div class="create_close">x</div>
+				<div class="create_box">
+					<div class="create_tit">
+						<p>새 게시물 만들기</p>
+					</div>
+					<div class="create">
+						<form action="" method="get">
+							<ul>
+								<li><img src="./img/create_img.JPG" alt="x"></li>
+								<li><p>사진과 동영상을 여기에 끌어다 놓으세요</p></li>
+								<li>
+									<label for="create_upload">컴퓨터에서 선택</label>
+									<input type="file" id="create_upload">
+								</li>
+							</ul>
+						</form>
+					</div>
+					<!-- create end -->
+				</div>
+				<!-- create_box end -->
+			</div>
+		<!-- create 영역 end -->
+
+  <section id="contents">
+   <div class="con1">
+    <div class="dm_tit">
+     <p>Instar_ID1<span>></span></p>
+     <p><img src="./img/send.JPG" alt="x"></p>
+    </div>
+    <!-- dm_tit end -->
+    <div class="dm_box">
+     <div class="note">
+      <p><img src="./img/story_img1.JPG" alt="x"></p>
+      <p>내 메모</p>
+     </div>
+     <!-- note end -->
+     <div class="dm">
+      <div class="tit">
+       <p>메세지</p>
+       <p><a href="#">요청</a></p>
+      </div>
+      <!-- tit end -->
+      <div class="txt">
+       <ul onclick="directClick()">
+        <li><img src="./img/story_img2.JPG" alt="x"></li>
+        <li><p>Instar_ID2</p><span>다이렉트 메세지 내용영역 입니다.</span></li>
+       </ul>
+       <ul>
+        <li><img src="./img/story_img3.JPG" alt="x"></li>
+        <li><p>Instar_ID3</p><span>다이렉트 메세지 내용영역 입니다.</span></li>
+       </ul>
+       <ul>
+        <li><img src="./img/story_img4.JPG" alt="x"></li>
+        <li><p>Instar_ID4</p><span>다이렉트 메세지 내용영역 입니다.</span></li>
+       </ul>
+       <ul>
+        <li><img src="./img/story_img5.JPG" alt="x"></li>
+        <li><p>Instar_ID5</p><span>다이렉트 메세지 내용영역 입니다.</span></li>
+       </ul>
+       <ul>
+        <li><img src="./img/story_img6.JPG" alt="x"></li>
+        <li><p>Instar_ID6</p><span>다이렉트 메세지 내용영역 입니다.</span></li>
+       </ul>
+      </div>
+     </div>
+     <!-- dm end -->
+    </div>
+    <!-- dm_box end -->
+   </div>
+   <!-- con1 end -->
+   <div class="con2">
+    <div class="dm_send">
+     <ul>
+      <li><img src="./img/dm_send.JPG" alt="x"></li>
+      <li><p>내 메시지</p></li>
+      <li><span>친구나 그룹에 비공개 사진과 메시지를 보내보세요</span></li>
+      <li><p class="send">메시지 보내기</p></li>
+     </ul>
+    </div>
+    <!-- dm_send end -->
+
+    <div class="direct_wrap">
+     <div class="direct_box">
+      <div class="tit">
+       <div class="profile">
+        <a href="#">
+         <ul>
+          <li><img src="img/story_img2.JPG" alt="x"></li>
+          <li><p>Instar_ID2</p></li>
+         </ul>
+        </a>
+       </div>
+       <div class="icon">
+        <ul>
+         <li><a href="#"><img src="./img/phone.JPG" alt="x"></a></li>
+         <li><a href="#"><img src="./img/camera.JPG" alt="x"></a></li>
+         <li><a href="#"><img src="./img/info.JPG" alt="x"></a></li>
+        </ul>
+       </div>
+      </div>
+      <!-- tit end -->
+      <div class="direct_message">
+       <div class="message">
+        <ul class="user_dm">
+         <li><img src="./img/story_img1.JPG" alt="x"></li>
+         <li class="text_enter"><p>상대방 말풍선 입니다.</p></li>
+         <li class="text_enter"><p>상대방 말풍선 입니다.</p></li>
+         <li class="text_enter"><p>상대방 말풍선 입니다.</p></li>
+        </ul>
+        <ul class="my_dm">
+         <li class="text_enter"><p>나의 말풍선 입니다.</p></li>
+         <li class="text_enter"><p>나의 말풍선 입니다.</p></li>
+         <li class="text_enter"><p>나의 말풍선 입니다.</p></li>
+        </ul>
+       </div>
+       <!-- message end -->
+       <div class="chatting">
+        <form action="" method="get">
+         <ul>
+          <li><img src="./img/smile.JPG" alt="x"></li>
+          <li><input type="text" placeholder="메시지 입력..."></li>
+          <li>
+           <a href="#"><img src="./img/voice.JPG" alt="x"></a>
+           <a href="#"><img src="./img/photo.JPG" alt="x"></a>
+           <a href="#"><img src="./img/chat_heart.JPG" alt="x"></a>
+          </li>
+         </ul>
+        </form>
+       </div>
+      </div>
+     </div>
+     <!-- direct_box end -->
+    </div>
+    <!-- direct_wrap end -->
+
+   </div>
+   <!-- con2 end -->
+
+   <div class="send_wrap">
+    <div class="send_bgclose" onclick="sendCloseClick()"></div>
+    <div class="send_box">
+     <div class="tit">
+      <p>새로운 메시지</p>
+      <span class="close" onclick="sendCloseClick()">x</span>
+     </div>
+     <!-- tit end -->
+     <div class="from">
+      <form action="">
+       <ul>
+        <li><p>받는사람 : </p></li>
+        <li><input type="text" placeholder="검색..."></li>
+       </ul>
+      </form>
+     </div>
+     <!-- from end -->
+     <div class="find">
+      <p>계정을 찾을수 없습니다.</p>
+     </div>
+     <!-- find end -->
+     <div class="btn">
+      <button type="button">채팅</button>
+     </div>
+     <!-- btn end -->
+    </div>
+    <!-- send_box end -->
+   </div>
+   <!-- send_wrap end -->
+
+
+
+  </section>
+  <!-- contents end -->
+ </div>
+</body>
+</html>

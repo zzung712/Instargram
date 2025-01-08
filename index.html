@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Instargram·로그인</title>
+ <link rel="icon" href="./img/instlogo.png">
+ <link rel="stylesheet" href="./css/reset.css">
+ <link rel="stylesheet" href="./css/common.css">
+ <link rel="stylesheet" href="./css/login.css">
+ <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+ <script src="./js/login.js" defer></script>
+</head>
+<body>
+ <div class="wrap">
+  <nav id="main">
+   <div class="slide">
+    <img class="s1" src="./img/screenshot1.png" alt="x">
+    <img class="s2" src="./img/screenshot2.png" alt="x">
+    <img class="s3" src="./img/screenshot3.png" alt="x">
+    <img class="s4" src="./img/screenshot4.png" alt="x">
+   </div>
+  </nav>
+  <section id="contents">
+   <div class="login_wrap">
+    <div class="login_box">
+     <div class="logo">
+      <a href="login.html"><img src="./img/txt_logo.png" alt="x"></a>
+     </div>
+     <div class="login">
+      <form action="" method="post">
+       <p><input type="text" placeholder="전화번호, 사용자이름 또는 이메일"></p>
+       <p><input type="password" placeholder="비밀번호"></p>
+       <button type="button">로그인</button>
+       <!-- 위에 버튼은 submit으로 작성해야함!!
+        단, 우리는 정보를 보낼 서버가 없기 때문에 에러방지를 위해 button으로 임시로 걸어줌!! -->
+      </form>
+     </div>
+     <!-- login end -->
+     <div class="or">
+      <p></p>
+      <span>또는</span>
+      <p></p>
+     </div>
+     <!-- or end -->
+     <div class="f_login">
+      <a href="https://www.facebook.com/login"><p><span>f</span></p>Facebook으로 로그인</a>
+     </div>
+     <!-- f_login end -->
+     <div class="lost_password">
+      <a href="lost_password.html">비밀번호를 잊으셨나요?</a>
+     </div>
+    </div>
+    <!-- login_box end -->
+    <div class="join_box">
+     <p>계정이 없으신가요?</p><a href="joinus.html">가입하기</a>
+    </div>
+    <!-- join_box end -->
+    <div class="download_box">
+     <p>앱을 다운로드 하세요.</p>
+     <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3DC2AD24C6-274A-40D6-9FAD-33BB457D2F3B%26utm_campaign%3DunifiedHome%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge"><img src="./img/gooleplay.png" alt="x"></a>
+     <a href="#"><img src="./img/microsoft.png" alt="x"></a>
+    </div>
+   </div>
+  </section>
+  <footer id="footer">
+   <div class="fmenu">
+    <a href="#">Meta</a>
+    <a href="#">소개</a>
+    <a href="#">블로그</a>
+    <a href="#">채용 정보</a>
+    <a href="#">도움말</a>
+    <a href="#">API</a>
+    <a href="#">개인정보처리방침</a>
+    <a href="#">약관</a>
+    <a href="#">위치</a>
+    <a href="#">Instagram Lite</a>
+    <a href="#">Threads</a>
+    <a href="#">연락처 업로드 & 비사용자</a>
+    <a href="#">Meta Verified</a>
+   </div>
+   <!-- fmenu end -->
+   <div class="copy">
+    <p>© 2024 Instagram from Meta</p>
+   </div>
+  </footer>
+ </div>
+</body>
+</html>

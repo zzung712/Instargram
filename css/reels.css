@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+#contents{width:calc(100% - 335px); height:100%;  overflow:scroll; overflow-x:hidden; padding-top:60px; box-sizing:border-box;}
+#contents::-webkit-scrollbar{display:none;}
+/* overflow:scroll >> 스크롤을 제어하는 속성
+   overflow-x >> 가로 스크롤을 제어하는 속성
+   overflow-x:hidden >> 가로스크롤을 없애는 속성값
+   -webkit-scrollbar >> 브라우저 엔진에 접근하여 스크롤바의 값을 지정하는 속성
+   -webkit-scrollbar : display:none >> 스크롤바를 없애는 속성값 */
+   .reels_wrap{width:540px; height:100%; margin:0 auto;}
+   .reels_box{width:100%; height:830px; background:#ffffff; display:flex; padding-bottom:60px;}
+   .reels_img{width:440px; height:100%; background:#000000; border-radius:5px; display:flex; flex-wrap:wrap; align-content:flex-end; box-shadow: 0 0 40px #a3a3a3;}
+   .reels{width:100%; height:575px;}
+   .reels>img{width:100%; height:100%;}
+
+   .reels_txt{width:100%; height:150px; color:#ffffff; padding:0 20px; box-sizing:border-box;}
+   .reels_id{width:100%; height:60px; display:flex; align-items:center; font-weight:bold;}
+   .reels_id>img{width:35px; height:35px; border-radius:100%; margin-right:10px;}
+   .reels_id>p{margin-right:7px;}
+   .reels_id>span{border:1px solid #ffffff; border-radius:5px; padding:5px 10px; cursor:pointer;}
+   .reels_contents{width:100%; height:40px; display:flex; align-items:center;}
+   .reels_contents>p{width:87%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+   .reels_contents>.add{opacity:0.7; cursor: pointer;}
+   .reels_audio{width:100%; height:50px; display:flex; align-items:center; font-size:0.9em;}
+   .reels_audio>a{display:block; width:100%;}
+   .reels_audio>a>p{width:100%; height:25px; background:#ffffff2d; border-radius:15px; display:flex; align-items:center; padding-left:10px; box-sizing:border-box;}
+
+   .reels_icon{width:100px; height:100%; display:flex; align-items:flex-end;} 
+   .icon{width:100%; height:320px;}
+   .icon>ul{width:100%; height:100%; display:flex; flex-wrap:wrap; align-content:space-around;}
+   .icon>ul>li{width:100%; text-align:center;}
+   .icon>ul>li>img{cursor:pointer;}
+   .icon>ul>li>span{font-size:1.3em; cursor:pointer; font-weight:bold;}
+
+   .icon>ul>li>a>img{width:30px; border-radius:3px; border:1px solid #000000;}
+
+   #hate,#save{display:none;}

@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+html,body{font-family:'NanumSquare'; width:100%; height:100%; overflow:hidden;}
+.wrap{width:100%; height:100%; display:flex;}
+
+/* header 공용*/
+#header{width:335px; height:100%; background:#ffffff; border-right:1px solid #dddddd; padding:40px 15px; box-sizing:border-box; display: flex; flex-wrap:wrap; align-content:space-between; position:relative; transition:all 0.5s;}
+.htop{width:100%;}
+.logo{width:100%; height:80px; padding-left:15px; box-sizing:border-box;}
+.logo img{width:120px;}
+
+.menu>ul>li{width:100%; height:50px; padding:0 10px; box-sizing:border-box;}
+.menu>ul>li:hover{background:#eeeeee; border-radius:5px;}
+.menu>ul>li>a{display:flex; width:100%; height:100%; align-items:center;}
+.menu>ul>li>a>img{margin-right:20px; transition:all 0.3s;}
+.menu>ul>li:hover img{transform:scale(1.07);}
+
+.h_sub{width:80px; height:100%; position:absolute; top:0; left:0; background:#ffffff; display:flex; flex-wrap:wrap; align-content:space-between; padding:40px 15px; box-sizing:border-box; justify-content:center; border-right:1px solid #eeeeee; z-index:-1;}
+.h_sub .logo{padding-left:10px;}
+.h_sub .logo>a>img{width:25px;}
+.h_sub .hbottom{width:100%;}
+
+.search_wrap{width:380px; height:100%; background:#ffffff; position:absolute; left:-400px; border-top-right-radius:10px; border-bottom-right-radius:10px; box-shadow:0 0 20px #dddddd; transition:all 0.5s;}
+.search_box{width:100%; height:100%;}
+.search_box>.search{width:100%; height:150px; border-bottom:1px solid #eeeeee; padding:0 20px; box-sizing:border-box;}
+.search_box>.search>p{width:100%; height:50%; display:flex; align-items:center; font-size:1.5em; font-weight:bold;}
+.search_box>.search>form{width:100%; height:50%; display:flex; align-items:center;}
+.search_box>.search>form>input{width:100%; height:40px; border:none; background:#eeeeee; border-radius:5px; padding:0 10px; font-size:1.05em;}
+
+.search_box>.search_list{width:100%; height:calc(100% - 150px); padding:0 20px; box-sizing:border-box;}
+.search_list>.tit{width:100%; height:60px; display:flex; align-items:center; font-weight:bold;}
+.search_list>.list{width:100%; height:calc(100% - 60px); display:flex; justify-content:center; align-items:center; color:#777777; font-weight:bold;}
+
+.arlam_wrap{width:380px; height:100%; position:absolute; left:-400px; border-top-right-radius:10px; border-bottom-right-radius:10px; box-shadow:0 0 20px #dddddd; transition:all 0.5s; background:#ffffff;}
+.arlam_box{width:100%; height:100%; padding:0 20px; box-sizing:border-box;}
+.arlam_box>.tit{width:100%; height:60px; display:flex; align-items:flex-end; font-size:1.5em; font-weight:bold;}
+.arlam_box>.list{width:100%; height:calc(100% - 60px); overflow:scroll; overflow-x:hidden;}
+.arlam_box>.list::-webkit-scrollbar{display:none;}
+.arlam_box>.list>p{width:100%; height:50px; display:flex; align-items:center;}
+.arlam_box>.list>ul{display:flex; align-items:center; margin-bottom:15px;}
+.arlam_box>.list>ul>li>img{width:50px; height:50px; border-radius:100%; border:1px solid #eeeeee; margin-right:10px;}
+
+.create_wrap{width:100%; height:100%; background:#00000065; position:absolute; top:0; display:none; z-index: 100;}
+.create_bgclose{width:100%; height:100%; position:absolute; top:0;}
+.create_close{position:absolute; right:15px; top:10px; color:#ffffff; font-size:2em; font-weight:bold; cursor:pointer;}
+.create_box{width:700px; height:750px; background:#ffffff; position:absolute; top:0; right:0; bottom:0; left:0; margin:auto; border-radius:10px;}
+
+.create_tit{width:100%; height:50px; border-bottom:1px solid #eeeeee; display:flex; justify-content:center; align-items:center; font-weight:bold; font-size:1.2em; box-sizing:border-box;}
+.create{width:100%; height:700px;}
+.create>form{width:100%; height:100%; display:flex; justify-content:center; align-items:center; text-align:center;}
+.create>form>ul>li>p{font-size:1.3em; line-height:60px;}
+.create>form>ul>li>label{cursor:pointer; background:#0099ff; color:#ffffff; padding:10px 15px; font-weight:bold; font-size:0.9em; border-radius:10px;}
+.create>form>ul>li>label:hover{background:#0866ff;}
+.create>form>ul>li>input{display:none;}

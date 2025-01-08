@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* #header .menu>ul>li:nth-child(3){font-weight:bold;}  >> html에서 strong태그로 묶음!*/
+
+#contents{width:calc(100% - 335px); height:100%; padding-top:60px; box-sizing:border-box; overflow:scroll; overflow-x:hidden;}
+#contents::-webkit-scrollbar{display:none;}
+.explore_wrap{width:960px; height:auto; background:#ffffff; margin:0 auto; display:flex; flex-wrap:wrap;}
+.explore_box{width:310px; height:310px; /* background:url(../img/feed_img1.JPG) no-repeat center; background-size:100% 100%; */ margin-right:10px; position:relative; margin-bottom:10px;}
+.explore_img{width:100%; height:100%;}
+.explore_img>img{width:100%; height:100%;}
+
+.explore_box:hover .icon{opacity:1;}
+.icon{width:100%; height:100%; background:#00000085; color:#ffffff; font-weight:bold; display:flex; align-items:center; justify-content:center; cursor:pointer; opacity:0; position:absolute; top:0;}
+.icon>ul{display:flex; width:100px; height:40px; align-items:center; justify-content:space-around;}
+.icon>ul>li{display:flex; width:100%; height:100%; align-items:center; justify-content:center;}
+.icon>ul>li>img{margin-right:5px;}
+

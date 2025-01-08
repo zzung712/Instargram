@@ -1,0 +1,40 @@
+@charset "utf-8";
+.wrap{width:900px; height:100vh; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
+#main{width:400px; height:600px; background:url(../img/home-phones.png) no-repeat top center; position:relative;}
+.slide{width:250px; height:541px; position:absolute; top:25px; right:25px;}
+.slide>img{position:absolute; top:0; left:0;}
+
+#contents{width:400px; height:600px; display:flex; justify-content:center; align-items:center;}
+.login_wrap{width:350px; height:100%; display:flex; flex-wrap:wrap;  align-content:space-around;}
+.login_wrap>div{background:#ffffff;}
+.login_box{width:100%; height:415px; border:1px solid #eee; box-sizing:border-box; padding:0 40px; display:flex; flex-wrap:wrap; align-content:center;}
+.logo{width:100%; height:100px; display:flex; align-items:center; justify-content:center;}
+.login{width:100%; height:135px;}
+.login>form{width:100%; height:100%; display:flex; flex-wrap:wrap; align-content:space-around;}
+.login>form>p{width:100%; height:35px;}
+.login>form>p>input{width:100%; height:100%; border:1px solid #d8d8d8; border-radius:5px; padding:0 10px; background:#f8f8f8;}
+.login>form>button{width:100%; height:35px; border:none; background:#4cb5f9; color:#ffffff; border-radius:5px; font-weight:bold; margin-top:15px; cursor:pointer;}
+
+.or{width:100%; height:60px; display:flex; align-items:center;}
+.or>p{width:100%; height:2px; background:#dddddd;}
+.or>span{display:block; width:140px; text-align:center; color:#777777; font-weight:bold;}
+
+.f_login{width:100%; height:40px;}
+.f_login>a{display:flex; width:100%; height:100%; justify-content:center; align-items:center; color:#385185; font-weight:bold;}
+.f_login>a>p{width:18px; height:18px; background:#385185; color:#ffffff; font-size:1.5em; text-align:right; padding-right:3px; box-sizing:border-box; margin-right:10px;}
+.f_login>a:active{opacity:0.7;}
+
+.lost_password{width:100%; height:40px;}
+.lost_password>a{width:100%; height:100%; display:flex; justify-content:center; align-items:center; font-size:0.9em;}
+.lost_password>a:active{opacity:0.7;}
+
+.join_box{width:100%; height:60px; border:1px solid #eee; box-sizing:border-box; display:flex; justify-content:center; align-items:center;}
+.join_box>a{color:#0095f6; font-weight:bold; position:relative; top:2px; margin-left:5px;}
+
+.download_box{width:100%; height:90px; display:flex; flex-wrap:wrap; align-content:center; justify-content:center;}
+.download_box>p{width:100%; text-align:center; line-height:35px;}
+.download_box>a>img{height:45px; margin:0 5px;}
+
+#footer{width:100%; height:80px; margin-top:80px; color:#777777; font-size:0.85em;}
+.fmenu{width:100%; height:50%; display:flex; justify-content:space-between; align-items:center; }
+.copy{width:100%; height:50%; display:flex; align-items:center; justify-content:center;}
